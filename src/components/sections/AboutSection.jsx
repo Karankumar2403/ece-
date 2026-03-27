@@ -15,7 +15,7 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 relative overflow-hidden bg-black">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           
           {/* Left: Text Content */}
           <ScrollReveal direction="right" className="space-y-6">
@@ -36,7 +36,7 @@ const AboutSection = () => {
           </ScrollReveal>
 
           {/* Right: Stats Grid */}
-          <div className="grid grid-cols-2 gap-6 relative z-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 relative z-10 mt-8 lg:mt-0">
             {stats.map((stat, i) => (
               <ScrollReveal delay={i * 0.1} key={i}>
                 <GlassCard hover glow className="p-8 text-center flex flex-col items-center justify-center bg-black/50 border border-gold/30 hover:border-gold shadow-lg">

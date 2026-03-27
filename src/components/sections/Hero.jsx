@@ -14,7 +14,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative w-full h-screen min-h-[800px] bg-black overflow-hidden flex flex-col justify-center items-center font-body pt-20">
+    <section className="relative w-full min-h-screen bg-black overflow-hidden flex flex-col justify-center items-center font-body pt-24 pb-12 lg:pt-20 lg:pb-0">
       
       {/* Background Grid - Circuit Style */}
       <div className="absolute inset-0 z-0 bg-black bg-[linear-gradient(rgba(0,180,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,180,255,0.05)_1px,transparent_1px)] bg-[size:50px_50px]">
@@ -127,7 +127,7 @@ const Hero = () => {
         </div>
 
         {/* Mobile View Stacked Cards */}
-        <div className="lg:hidden w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mt-auto mb-20 z-20 relative px-4">
+        <div className="lg:hidden w-full grid grid-cols-1 sm:grid-cols-2 gap-4 mt-12 mb-8 z-20 relative px-4">
           {cards.map((card, i) => (
             <GlassCard key={i} className="p-4 bg-black/80 border border-gold/30">
               <div className="flex items-center space-x-3 mb-2">
@@ -144,7 +144,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1 }}
-          className="absolute bottom-8 lg:bottom-12 inset-x-0 mx-auto w-full flex flex-col items-center justify-center space-y-6 z-30"
+          className="relative lg:absolute bottom-auto lg:bottom-12 inset-x-0 mx-auto w-full flex flex-col items-center justify-center space-y-6 z-30 mt-auto"
         >
           <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-6">
             <Link to="/about" className="btn-primary w-full sm:w-auto text-lg px-8">Explor Society</Link>

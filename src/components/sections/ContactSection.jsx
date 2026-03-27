@@ -63,7 +63,7 @@ const ContactSection = () => {
           </div>
 
           {/* Right: Contact Form */}
-          <GlassCard className="p-8 hidden md:block lg:block bg-black/80">
+          <GlassCard className="p-6 md:p-8 bg-black/80 mt-8 md:mt-0">
             <form action="mailto:ecesociety@bitsindri.ac.in" method="GET" encType="text/plain" className="space-y-6">
               <div className="space-y-1">
                 <label className="font-mono text-xs text-muted uppercase tracking-wider block">Full Name</label>
@@ -76,7 +76,7 @@ const ContactSection = () => {
                 />
               </div>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-1">
                   <label className="font-mono text-xs text-muted uppercase tracking-wider block">Email</label>
                   <input 

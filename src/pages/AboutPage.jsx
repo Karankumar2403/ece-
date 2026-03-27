@@ -36,7 +36,7 @@ const AboutPage = () => {
             subtitle="The dedicated individuals steering the society towards excellence."
           />
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
             {leaders.map((member, i) => (
               <ScrollReveal key={member.id} delay={i * 0.1} className="w-full">
                 <GlassCard hover className="p-6 text-center group cursor-pointer h-full flex flex-col items-center">

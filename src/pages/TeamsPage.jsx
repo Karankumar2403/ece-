@@ -128,7 +128,7 @@ const TeamsPage = () => {
             {/* Rest of the team Grid */}
             <AnimatePresence mode="popLayout">
               {filteredTeam.length > 0 ? (
-                <motion.div layout className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
                   {filteredTeam.map((member) => (
                     <motion.div
                       layout
