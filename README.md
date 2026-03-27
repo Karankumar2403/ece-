@@ -1,4 +1,4 @@
-# ECE Society — BIT Sindri | Website Rebuild
+# ece- (ECE Society — BIT Sindri | Website Rebuild)
 
 Welcome to the new, modernized web application for the Electronics and Communication Engineering (ECE) Society of BIT Sindri.
 
