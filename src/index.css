@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-white font-body;
+    overflow-x: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-black;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent rounded-full;
+  }
+
+  /* Selection color */
+  ::selection {
+    @apply bg-accent text-white;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply backdrop-blur-md bg-white/[0.02] border border-white/10 rounded-3xl;
+  }
+  .glass-hover {
+    @apply hover:border-gold/50 hover:bg-white/[0.05] transition-all duration-300;
+  }
+  .glow-text {
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+    @apply text-accent;
+  }
+  .btn-primary {
+    @apply bg-white text-black hover:bg-neutral-200 transition-all duration-300 px-8 py-3 rounded-full font-semibold inline-block text-center border border-white;
+  }
+  .btn-ghost {
+    @apply border border-white text-white hover:bg-white hover:text-black transition-colors duration-300 px-6 py-2 rounded-full font-medium inline-block text-center;
+  }
+  .bg-circuit {
+    background-image: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
+  }
+}
