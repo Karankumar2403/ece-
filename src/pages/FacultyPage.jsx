@@ -111,11 +111,11 @@ const FacultyPage = () => {
               <ScrollReveal delay={(index % 3) * 0.1} key={prof.id} className="w-full">
                 <GlassCard hover className={`p-6 flex flex-col h-full items-center text-center border-l-4 border-l-${getRoleColor(prof.role)}-500 transition-transform`}>
                   
-                  <div className="w-28 h-28 rounded-full overflow-hidden border-2 border-cyan-500/20 p-1 mb-6 mt-4 relative group cursor-pointer hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(0,212,255,0.4)] transition-all">
+                  <div className="w-full h-72 rounded-xl overflow-hidden border-2 border-cyan-500/20 mb-6 bg-cyan-950/10 relative group cursor-pointer hover:border-cyan-400 hover:shadow-[0_0_15px_rgba(0,212,255,0.4)] transition-all">
                     <img 
                       src={prof.image} 
                       alt={prof.name} 
-                      className="w-full h-full object-cover rounded-full filter grayscale group-hover:grayscale-0 transition-all duration-500" 
+                      className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-500 p-2" 
                       onError={(e) => { e.target.onerror = null; e.target.src = "https://ecesociety.bitsindri.ac.in/assets/logo.png"; }}
                     />
                   </div>
